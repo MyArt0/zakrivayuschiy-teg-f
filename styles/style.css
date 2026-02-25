@@ -10,7 +10,106 @@
 
 */
 
+.header {
+  font-family: 'Press Start 2P';
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  block-size: 368px;
+  inline-size: 700px;
+  margin: 0 auto;
+  margin-block: 100px;
+  border: 2px solid #000;
+}
+
+.header__title {
+  font-size: 65px;
+  font-weight: 400;
+}
+
+.header__subtitle {
+  font-size: 23px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.header__subtitle span {
+  text-transform: lowercase;
+}
+
 .page {
+  font-family: 'Inter', sans-serif;
   min-inline-size: 320px;
   min-block-size: 100dvb;
+    background-image:
+    repeating-linear-gradient(
+      to right,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    repeating-linear-gradient(
+      to bottom,
+      #d3d3d3 0,
+      #d3d3d3 2px,
+      transparent 2px,
+      transparent 4px
+    ),
+    linear-gradient(
+      to bottom,
+      #e7e7e7 0.01%,
+      #1a1a1a 100%
+    );
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.cards__list {
+  display: grid;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card {
+  display: grid;
+  gap: 25px;
+  background-color: #fff;
+  inline-size: 700px;
+  border: 2px solid #000;
+}
+
+.card p {
+  margin-inline: 25px;
+}
+
+.card__title {
+  margin-block-end: -25px;
+  padding-inline-start: 10px;
+  padding-block: 4px;
+  
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-block-end: 25px;
+  margin-inline-end: 25px;
+  font-family: 'Press Start 2P';
+  font-size: 14px;
+}
+
+.card__icon-button {
+  background-color: transparent;
+  border: none;
+}
+
+.card__like-button {
+  background-color: transparent;
+  padding: 12.5px 37px;
+  border: 2px solid #000;
+  
 }
